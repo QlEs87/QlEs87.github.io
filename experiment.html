@@ -1,0 +1,74 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Progress bar</title> 
+</head> 
+<body>  
+    <p>HTML</p> 
+    <div class="container"> 
+        <div class="skill html">80%</div> 
+    </div> 
+  
+    <p>CSS</p> 
+    <div class="container"> 
+        <div class="skill css">70%</div> 
+    </div> 
+    <p>JavaScript</p> 
+    <div class="container"> 
+        <div class="skill js">40%</div> 
+    </div> 
+    <p>JQurey</p> 
+    <div class="container"> 
+        <div class="skill jq">25%</div> 
+    </div> 
+</body> 
+</html> 
+
+<style> 
+    p { 
+        font-size: 17px; 
+    } 
+  
+    .container { 
+        background-color: rgb(192, 192, 192); 
+        width: 80%; 
+        border-radius: 10px; 
+    } 
+  
+    .skill { 
+        background-color:blueviolet; 
+        color: white; 
+        padding: 10px; 
+        text-align: center; 
+        font-size: 13px; 
+        border-radius: 100px; 
+    } 
+  
+    .html { 
+        width: 80%; 
+    } 
+  
+    .css { 
+        width: 70%; 
+    }
+    .js { 
+    width: 40%;
+    }
+
+    .jq { 
+    width: 25%;
+    }  
+
+</style> 
+
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $( document ).ready( function() {
+        $( 'button' ).click( function() {
+          $( '#a' ).animate( {
+            width: '100%'
+          } );
+        } );
+      } );
+    </script>
